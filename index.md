@@ -279,3 +279,36 @@ fi
 echo
 echo "✅ Done scanning."
 ```
+
+## 05. Danger!
+
+`cleanup_except.sh`
+
+
+```sh
+#!/usr/bin/env bash
+set -euo pipefail
+
+# DIRECTORIES (or files) TO KEEP — adjust these
+KEEP=(
+  "important_dir"
+  "another_dir"
+  "keep_this_file.txt"
+)
+
+# Convert KEEP into find arguments
+KEEP_EXPR=()
+for k in "${KEEP[@]}"; do
+  KEEP_EXPR+=( ! -name "$k" )
+done
+
+echo "About to delete everything EXCEPT:"
+printf '  - %s\n' "${KEEP[@]}"
+echo
+read -p "Continue? (y/N): " ans
+[[ "$ans" == "y" ]] || exit 1
+
+# Delete everything except the whitelisted items
+find . -mindepth 1 -maxdepth 1 "${KEEP_EXPR[@]}" -exec rm -rf {} +
+
+```
