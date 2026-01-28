@@ -1,3 +1,5 @@
+## 01. YouTube
+
 ```html
 <figure style="display: flex; flex-direction: column; align-items: center; width: 100%; margin: 2rem 0;">
   <iframe
@@ -13,4 +15,22 @@
     Google DeepMind chief warns AI investment looks ‘bubble-like’ (8:49) | FT Interview
   </figcaption>
 </figure>
+```
+
+## 02. PDF
+
+```html
+<figure style="display: flex; flex-direction: column; align-items: center; width: 100%; margin: 2rem 0;">
+  <iframe
+    src="ukhona/obesity_lkd.pdf"
+    width="56%"
+    height="600"
+    style="border: 1px solid #ddd;"
+    title="Obesity LKD Manuscript">
+  </iframe>
+  <figcaption style="margin-top: 0.5rem; font-size: 0.85em; color: #555; text-align: center;">
+    Obesity & Low-Carbohydrate Ketogenic Diet — Working Manuscript (PDF)
+  </figcaption>
+</figure>
+
 ```
