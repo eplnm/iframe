@@ -1,3 +1,126 @@
+
+## 00. Image
+
+```html
+  <!-- Large image of The Dude at the very top -->
+<section class="card hero-image-card">
+  <div class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">2 Yohana 1:3</h1>
+      <div class="hero-subtitle-group">
+        <h2 class="hero-subtitle">Data → <a href="https://jhurepos.github.io/sgd-theology/">Signal</a> → Meaning</h2>
+        <h3 class="hero-meta">Altitude · Gradient · Basin</h3>
+      </div>
+    </div>
+    <figure class="hero-figure">
+      <div class="image-wrapper">
+        <img 
+          src="ukhona/img/rx.jpg" 
+          alt="The Dude with his Rug" 
+          class="hero-image"
+        >
+      </div>
+      <figcaption class="hero-caption">Ibirunga, Mifumbiro</figcaption>
+    </figure>
+  </div>   
+</section>
+
+<style>
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  padding: 2.5rem 1.5rem;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.9) 100%);
+  color: white;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+  background: linear-gradient(to right, #ffffff, #e2e8f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 500;
+  margin: 0;
+  color: #94a3b8;
+  letter-spacing: 0.05em;
+  font-family: 'Courier New', monospace;
+}
+
+.hero-meta {
+  font-size: clamp(0.875rem, 2vw, 1.125rem);
+  font-weight: 300;
+  margin: 0;
+  color: #64748b;
+  letter-spacing: 0.15em;
+}
+
+.hero-figure {
+  margin: 0;
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.02);
+}
+
+.hero-caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #64748b;
+  padding: 1rem;
+  background: linear-gradient(to bottom, transparent, rgba(15, 23, 42, 0.05));
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .hero-content {
+    padding: 3.5rem 2rem;
+  }
+  
+  .hero-caption {
+    font-size: 1rem;
+    padding: 1.25rem;
+  }
+}
+</style>
+```
+
 ## 01. YouTube
 
 ```html
@@ -310,5 +433,27 @@ read -p "Continue? (y/N): " ans
 
 # Delete everything except the whitelisted items
 find . -mindepth 1 -maxdepth 1 "${KEEP_EXPR[@]}" -exec rm -rf {} +
+
+```
+
+## 06. LaTeX
+
+```html
+<!-- Drop this anywhere in your README.md or page HTML -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true
+    },
+    options: {
+      skipHtmlTags: ['script','noscript','style','textarea','pre','code']
+    }
+  };
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 
 ```
