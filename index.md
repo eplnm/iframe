@@ -1,172 +1,93 @@
-
-
-Here are three clean, responsive HTML templates for embedding figures (images with captions) in your page. They build on the style of your hero section example—using similar class names (`card`, `image-wrapper`, `figure-image`, `figure-caption`) for consistency—while keeping things simple and flexible. They use CSS Flexbox for layout and are mobile-responsive (figures stack vertically on smaller screens).
-
-I've included a shared `<style>` block you can place once in your `<head>` (or in a CSS file), then the individual templates as `<section>` snippets you can drop anywhere in your content.
-
--X
-
-### Shared CSS (add this once)
-
-```css
-<style>
-  .figure-card {
-    padding: 1.5rem;
-    background: #f8f9fa; /* light bg, or match your theme */
-    border-radius: 8px;
-    margin: 2rem 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-
-  .figures-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-  }
-
-  .figure {
-    flex: 1;
-    min-width: 280px; /* prevents too-narrow images on small screens */
-    text-align: center;
-  }
-
-  .image-wrapper {
-    overflow: hidden;
-    border-radius: 6px;
-    background: #eee; /* placeholder while loading */
-  }
-
-  .figure-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
-  }
-
-  .figure-image:hover {
-    transform: scale(1.03);
-  }
-
-  .figure-caption {
-    margin-top: 0.75rem;
-    font-style: italic;
-    color: #555;
-    font-size: 0.95rem;
-  }
-
-  /* Solo figure at 70% width, centered */
-  .solo-figure {
-    max-width: 70%;
-    margin: 0 auto;
-  }
-
-  /* Two figures: roughly 50/50 split */
-  .two-figures .figure {
-    flex: 1 1 45%;
-  }
-
-  /* Three figures: roughly 33% each */
-  .three-figures .figure {
-    flex: 1 1 30%;
-  }
-
-  /* Stack vertically on narrow screens */
-  @media (max-width: 768px) {
-    .figures-grid {
-      flex-direction: column;
-      align-items: center;
-    }
-    .solo-figure {
-      max-width: 90%;
-    }
-  }
-</style>
-```
-
-### 1. Solo figure (70% width, centered)
 ```html
-<section class="card figure-card">
-  <figure class="figure solo-figure">
-    <div class="image-wrapper">
+<!-- Solo figure (responsive width) -->
+<div style="max-width: 70%; margin: 2rem auto; padding: 1.5rem; background: linear-gradient(145deg, #f8f9fa, #ffffff); border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.06);">
+  <figure style="margin: 0;">
+    <div style="overflow: hidden; border-radius: 8px; background: #fff;">
       <img 
         src="ukhona/img/your-image.jpg" 
-        alt="Single figure description" 
-        class="figure-image"
+        alt="Single figure description"
+        style="width: 100%; height: auto; display: block;"
       >
     </div>
-    <figcaption class="figure-caption">Caption: Gradient descent in the loss landscape of Ibirunga</figcaption>
+    <figcaption style="margin-top: 1rem; text-align: center; color: #555; font-style: italic; font-size: 0.95rem; line-height: 1.5;">
+      Caption: Gradient descent in the loss landscape of Ibirunga
+    </figcaption>
   </figure>
-</section>
-```
+</div>
 
-### 2. Two adjacent figures
-```html
-<section class="card figure-card two-figures">
-  <div class="figures-grid">
-    <figure class="figure">
-      <div class="image-wrapper">
+<!-- Two adjacent figures (stacks on mobile) -->
+<div style="margin: 2rem auto; padding: 1.5rem; background: linear-gradient(145deg, #f8f9fa, #ffffff); border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.06);">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 1.5rem;">
+    <figure style="margin: 0;">
+      <div style="overflow: hidden; border-radius: 8px; background: #fff;">
         <img 
           src="ukhona/img/ant-scout.jpg" 
-          alt="Stochastic ant scout foraging" 
-          class="figure-image"
+          alt="Stochastic ant scout foraging"
+          style="width: 100%; height: auto; display: block;"
         >
       </div>
-      <figcaption class="figure-caption">Dionysian scout: high variance, most do not return</figcaption>
+      <figcaption style="margin-top: 0.75rem; text-align: center; color: #555; font-style: italic; font-size: 0.9rem; line-height: 1.4;">
+        Dionysian scout: high variance, most do not return
+      </figcaption>
     </figure>
-    <figure class="figure">
-      <div class="image-wrapper">
+    <figure style="margin: 0;">
+      <div style="overflow: hidden; border-radius: 8px; background: #fff;">
         <img 
           src="ukhona/img/pheromone-trail.jpg" 
-          alt="Pheromone trail convergence" 
-          class="figure-image"
+          alt="Pheromone trail convergence"
+          style="width: 100%; height: auto; display: block;"
         >
       </div>
-      <figcaption class="figure-caption">Apollonian convergence: gradient descent to the basin</figcaption>
+      <figcaption style="margin-top: 0.75rem; text-align: center; color: #555; font-style: italic; font-size: 0.9rem; line-height: 1.4;">
+        Apollonian convergence: gradient descent to the basin
+      </figcaption>
     </figure>
   </div>
-</section>
-```
+</div>
 
-### 3. Three adjacent figures
-```html
-<section class="card figure-card three-figures">
-  <div class="figures-grid">
-    <figure class="figure">
-      <div class="image-wrapper">
+<!-- Three adjacent figures (stacks on mobile) -->
+<div style="margin: 2rem auto; padding: 1.5rem; background: linear-gradient(145deg, #f8f9fa, #ffffff); border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.06);">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 1.25rem;">
+    <figure style="margin: 0;">
+      <div style="overflow: hidden; border-radius: 8px; background: #fff;">
         <img 
           src="ukhona/img/raindrop-impact.jpg" 
-          alt="Raindrops terraforming flat surface" 
-          class="figure-image"
+          alt="Raindrops terraforming flat surface"
+          style="width: 100%; height: auto; display: block;"
         >
       </div>
-      <figcaption class="figure-caption">Stochastic impacts on flat ground → vaporize</figcaption>
+      <figcaption style="margin-top: 0.75rem; text-align: center; color: #555; font-style: italic; font-size: 0.85rem; line-height: 1.4;">
+        Stochastic impacts on flat ground → vaporize
+      </figcaption>
     </figure>
-    <figure class="figure">
-      <div class="image-wrapper">
+    <figure style="margin: 0;">
+      <div style="overflow: hidden; border-radius: 8px; background: #fff;">
         <img 
           src="ukhona/img/channel-erosion.jpg" 
-          alt="Raindrops carving gradient channels" 
-          class="figure-image"
+          alt="Raindrops carving gradient channels"
+          style="width: 100%; height: auto; display: block;"
         >
       </div>
-      <figcaption class="figure-caption">Gradient flow → erosion and basin formation</figcaption>
+      <figcaption style="margin-top: 0.75rem; text-align: center; color: #555; font-style: italic; font-size: 0.85rem; line-height: 1.4;">
+        Gradient flow → erosion and basin formation
+      </figcaption>
     </figure>
-    <figure class="figure">
-      <div class="image-wrapper">
+    <figure style="margin: 0;">
+      <div style="overflow: hidden; border-radius: 8px; background: #fff;">
         <img 
           src="ukhona/img/deep-basin.jpg" 
-          alt="Deep attractor basin after repeated descent" 
-          class="figure-image"
+          alt="Deep attractor basin after repeated descent"
+          style="width: 100%; height: auto; display: block;"
         >
       </div>
-      <figcaption class="figure-caption">Lowered loss: new stable basin (UX)</figcaption>
+      <figcaption style="margin-top: 0.75rem; text-align: center; color: #555; font-style: italic; font-size: 0.85rem; line-height: 1.4;">
+        Lowered loss: new stable basin (UX)
+      </figcaption>
     </figure>
   </div>
-</section>
+</div>
 ```
 
-These are plug-and-play: replace the `src`, `alt`, and caption text as needed. The flex layout handles responsiveness automatically. If you want captions overlaid like your hero section, or different aspect ratios enforced (e.g., `aspect-ratio: 16/9` on `.image-wrapper`), let me know and I can tweak them. What kind of images/content are you planning to drop into these?
 
 ## 00. Image
 
