@@ -1697,6 +1697,1210 @@ if __name__ == "__main__":
 - etc
 
 # 16 `eplnm/tin`
-# 17
+# 17 `ukb-dt or cryo-pyro/repos-00`
+
+`index.html`
+```html
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Journaling</title>
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta name="description" content="The Dude's Rug.">
+  <link rel="canonical" href="https://ukb-dt.github.io/repos-00/">
+  <meta name="robots" content="index,follow">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:site_name" content="Repos">
+  <meta property="og:title" content="The Dude's Rug">
+  <meta property="og:description" content="Saddle Point">
+  <meta property="og:type" content="blog">
+  <meta property="og:url" content="https://ukb-dt.github.io/repos-00/">
+  <meta property="og:image" content="ukhona/img/ukb-landscape.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Dude's Rug">
+  <meta name="twitter:description" content="Saddle Point">
+  <meta name="twitter:image" content="ukhona/img/ukb-landscape.jpg"> 
+
+  <!-- Icons / assets -->
+  <link rel="icon" href="https://abikesa.github.io/favicon/assets/favicon-light.ico" type="image/x-icon">
+  <link rel="icon" href="https://abikesa.github.io/favicon/assets/favicon-light.ico" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="https://abikesa.github.io/favicon/assets/favicon-dark.ico" media="(prefers-color-scheme: dark)">
+  <link rel="preload" href="https://abikesa.github.io/logos/assets/ukubona-light.png" as="image">
+  <link rel="preload" href="https://abikesa.github.io/logos/assets/ukubona-dark.png" as="image">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS IN ORDER: Variables → Base → Components → Footer -->
+  <link href="ukhona/css/variables.css" rel="stylesheet" />
+  <link href="ukhona/css/head.css" rel="stylesheet" />
+  <link href="ukhona/css/card.css" rel="stylesheet" />
+  <link href="ukhona/css/footer.css" rel="stylesheet" />
+  
+  <!-- MathJax -->
+  <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <div class="scroll-indicator"><div class="scroll-progress"></div></div>
+  <div class="bg-pattern"></div>
+
+  <header class="header" id="header"></header>
+
+  <main class="page wrap-max">
+    <section class="card">
+      <!-- Your content here -->
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+  <script src="ukhona/js/shared.js"></script>
+</body> 
+</html>
+```
+
+`ukhona/html/template.html`
+```html
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ukhona — An Accounting of Survival</title>
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta name="description" content="The Dude's Rug.">
+  <link rel="canonical" href="https://ukb-dt.github.io/repos-00/">
+  <meta name="robots" content="index,follow">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:site_name" content="Repos">
+  <meta property="og:title" content="The Dude's Rug">
+  <meta property="og:description" content="Saddle Point">
+  <meta property="og:type" content="blog">
+  <meta property="og:url" content="https://ukb-dt.github.io/repos-00/">
+  <meta property="og:image" content="../img/ukb-landscape.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Dude's Rug">
+  <meta name="twitter:description" content="Saddle Point">
+  <meta name="twitter:image" content="../img/ukb-landscape.jpg"> 
+
+  <!-- Icons / assets -->
+  <link rel="icon" href="https://abikesa.github.io/favicon/assets/favicon-light.ico" type="image/x-icon">
+  <link rel="icon" href="https://abikesa.github.io/favicon/assets/favicon-light.ico" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="https://abikesa.github.io/favicon/assets/favicon-dark.ico" media="(prefers-color-scheme: dark)">
+  <link rel="preload" href="https://abikesa.github.io/logos/assets/ukubona-light.png" as="image">
+  <link rel="preload" href="https://abikesa.github.io/logos/assets/ukubona-dark.png" as="image">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS IN ORDER: Variables → Base → Components → Footer -->
+  <link href="../css/variables.css" rel="stylesheet" />
+  <link href="../css/head.css" rel="stylesheet" />
+  <link href="../css/card.css" rel="stylesheet" />
+  <link href="../css/footer.css" rel="stylesheet" />
+  
+  <!-- MathJax -->
+  <script src="../js/mathjax.js"></script>
+  <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <div class="scroll-indicator"><div class="scroll-progress"></div></div>
+  <div class="bg-pattern"></div>
+
+  <header class="header" id="header"></header>
+
+  <main class="page wrap-max">
+    <section class="card">
+      <h1>Musick</h1>
+      <h2>∅</h2>
+      <h3>B$^{\flat\varnothing}$</h3>
+
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%; margin: 2rem 0;">
+        <iframe
+          width="65%"
+          height="315"
+          src="https://www.youtube.com/embed/RY-3oEcwwzc?start=595"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <figcaption style="margin-top: 0.5rem; font-size: 0.85em; color: var(--text-secondary); text-align: center;">
+          Mozart as star. Beethoven as Raindrop | Pop → Star, <a href="https://ukb-dt.github.io/repos-00/">Art</a> → Raindrop
+        </figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+  <script src="../js/shared.js"></script>
+</body>
+</html>
+```
+
+`ukhona/html/footer.html`
+
+```html
+<footer class="footer">
+  <div class="wrap-max footer-wrap">
+    <div class="footer-chorus rotating-chorus" data-interval="60000">
+      <span class="chip">To see, blindly</span>
+      <span class="chip">To forage, stochastically</span>
+      <span class="chip">To rehearse, consequentially</span>
+    </div>
+    <div class="footer-micro">
+        <p>
+             © 2026 <a href="https://ukubona-llc.github.io/">Ukubona LLC</a>. All rights reserved.
+        </p>
+
+    </div>
+  </div>
+</footer>
+```
+
+`ukhona/html/header.html`
+
+```html
+<div class="nav-container wrap-max">
+  <img src="https://abikesa.github.io/logos/assets/ukubona-dark.png" alt="Ukubona LLC Logo" id="logo" class="logo" />
+  <div class="top-right">
+    <ul class="nav-links">
+      <li><a href="/"                         class="nav-link" data-nav="home">Home</a></li>
+    </ul>
+    <button class="menu-icon" id="menuIcon" role="button" aria-label="Open navigation menu">
+      <div></div><div></div><div></div>
+      <div></div><div></div><div></div>
+      <div></div><div></div><div></div>
+    </button>
+    <button id="toggle-theme" aria-label="Toggle theme">🌙</button>
+  </div>
+</div>
+
+<div class="app-grid wrap-max" id="gridMenu" aria-hidden="true">
+  <a href="/"><div class="icon-box">📊</div>Home</a>
+  <a href="/ukhona/html/template.html"><div class="icon-box">🎮</div>Template</a>
+  <!---a href="/assets/html/ukb-p-001.html"><div class="icon-box">🧭</div>Onboarding</a>-->
+</div>
+```
+
+`ukhona/css/card.css`
+```css
+/* ========== CARD-SPECIFIC STYLES ========== */
+
+/* Main card styling - NO TOP MARGIN (let head.css .page handle spacing) */
+.card {
+  max-width: 720px; 
+  margin: 0 auto 64px; /* 0 top, auto sides, 64px bottom */
+  text-align: left;
+  background: rgba(255, 255, 255, 0.05); 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px; 
+  padding: 32px 24px; 
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.55);
+}
+
+/* Card logo */
+.card-logo { 
+  max-width: 140px; 
+  margin-bottom: 14px; 
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Card headings */
+.card-title { 
+  margin: 0; 
+  font-size: 2rem; 
+  font-weight: 800; 
+  color: var(--text);
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: left;
+}
+
+.card-subtitle { 
+  margin: 6px 0 16px; 
+  font-weight: 600; 
+  opacity: 0.9; 
+  font-size: 1.15rem; 
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+/* Bio sections */
+.bio {
+  opacity: 0.95; 
+  font-size: 0.95rem; 
+  line-height: 1.65; 
+  margin: 0 auto; 
+  max-width: 70ch; 
+  text-align: left;
+  color: var(--text);
+}
+
+.bio-secondary {
+  margin-top: 10px;
+}
+
+.bio strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Badges */
+.badges {
+  margin: 20px auto 0; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 10px;
+  max-width: 70ch;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.08); 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 14px; 
+  border-radius: 999px; 
+  font-size: 0.9rem; 
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  background: rgba(102, 126, 234, 0.15);
+  border-color: rgba(102, 126, 234, 0.4);
+  color: var(--text);
+  transform: translateY(-1px);
+}
+
+/* CTA row */
+.cta-row {
+  margin-top: 22px; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 14px;
+}
+
+a.cta {
+  text-decoration: none; 
+  padding: 0.9rem 1.4rem; 
+  border-radius: 12px; 
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  display: inline-flex; 
+  align-items: center; 
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+a.cta:hover { 
+  transform: translateY(-2px); 
+}
+
+.primary { 
+  background: linear-gradient(135deg, #6366f1, #8b5cf6); 
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.primary:hover {
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.secondary { 
+  background: rgba(255, 255, 255, 0.08); 
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .card {
+    margin: 0 auto 48px;
+    padding: 24px 20px;
+    max-width: 90%;
+  }
+  
+  .card-title {
+    font-size: 1.75rem;
+  }
+  
+  .card-subtitle {
+    font-size: 1rem;
+  }
+  
+  .bio {
+    font-size: 0.9rem;
+    max-width: none;
+  }
+  
+  .cta-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  a.cta {
+    width: 100%;
+    justify-content: center;
+  }
+}
+```
+
+`ukhona/css/footer.css`
+```css
+/* ========================================
+   FOOTER.CSS - Centered Footer Styles
+   ======================================== */
+
+.footer {
+    text-align: center;
+    padding: 4rem 2rem;
+    border-top: 1px solid var(--border);
+    margin-top: 4rem;
+    background: var(--surface);
+}
+
+.footer-wrap {
+    max-width: var(--max-wrap);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Rotating chorus */
+.footer-chorus {
+    font-size: 1.1rem;
+    font-weight: 600;
+    min-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-chorus .chip {
+    background: var(--warning-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+/* Micro text */
+.footer-micro {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    opacity: 0.8;
+}
+
+.footer-micro p {
+    margin: 0;
+}
+
+.footer-micro a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(102, 126, 234, 0.3);
+    transition: var(--transition);
+}
+
+.footer-micro a:hover {
+    color: var(--accent-purple);
+    border-bottom-color: var(--accent-purple);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer {
+        padding: 3rem 1.5rem;
+    }
+    
+    .footer-chorus {
+        font-size: 1rem;
+    }
+    
+    .footer-micro {
+        font-size: 0.85rem;
+    }
+}
+```
+
+`ukhona/css/head.css`
+```css
+/* ===== HEAD.CSS (Variables removed - now in variables.css) ===== */
+
+/* Base Styles */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    overflow-x: hidden;
+    transition: var(--transition);
+    font-size: 16px;
+}
+
+.wrap-max {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+}
+
+.bg-pattern { position: fixed; inset: 0; z-index: -2; background: var(--bg); }
+.bg-pattern::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(102,126,234,.10) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(118,75,162,.10) 0%, transparent 50%),
+        radial-gradient(circle at 40% 60%, rgba(240,147,251,.08) 0%, transparent 50%);
+    animation: bgFloat 20s ease-in-out infinite;
+}
+@keyframes bgFloat {
+    0%, 100% { transform: translate(0,0) rotate(0deg); }
+    33% { transform: translate(-20px,-20px) rotate(1deg); }
+    66% { transform: translate(20px,-10px) rotate(-1deg); }
+}
+
+.scroll-indicator { position: fixed; top: 0; left: 0; width: 100%; height: 3px; z-index: 1000; background: var(--glass); }
+.scroll-progress { height: 100%; width: 0%; background: var(--primary-gradient); transition: width .3s ease; }
+
+/* HEADER */
+.header {
+    position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+    backdrop-filter: blur(var(--blur)); -webkit-backdrop-filter: blur(var(--blur));
+    background: var(--surface); border-bottom: 1px solid var(--border); min-height: var(--header-h);
+}
+.nav-container { height: var(--header-h); display: flex; align-items: center; justify-content: space-between; }
+
+#logo.logo {
+    width: var(--logo-size); height: var(--logo-size); object-fit: contain;
+    transform-origin: center center; animation: spin var(--logo-spin-duration) linear infinite;
+    display: block; will-change: transform;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.nav-links { display: flex; list-style: none; gap: 2rem; margin: 0; padding: 0; }
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    position: relative;
+}
+.nav-link::after {
+    content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px;
+    background: var(--primary-gradient); transition: width .3s ease;
+}
+.nav-link:hover { color: var(--text); }
+.nav-link:hover::after { width: 100%; }
+
+.top-right { display: flex; align-items: center; gap: 1rem; }
+
+.menu-icon {
+    display: grid; grid-template-columns: repeat(3, 6px); gap: 3px; padding: 8px;
+    background: var(--glass); border: 1px solid var(--border);
+    border-radius: 8px; cursor: pointer; transition: var(--transition);
+}
+.menu-icon div { width: 6px; height: 6px; background: var(--text); border-radius: 50%; transition: var(--transition); }
+.menu-icon:hover { background: var(--primary-gradient); transform: scale(1.05); }
+.menu-icon:hover div { background: white; }
+
+#toggle-theme {
+    padding: 8px 12px; background: var(--glass); border: 1px solid var(--border);
+    border-radius: 8px; cursor: pointer; font-size: 16px; transition: var(--transition);
+}
+#toggle-theme:hover { background: var(--secondary-gradient); color: #fff; transform: scale(1.05); }
+
+.app-grid {
+    position: fixed;
+    top: calc(var(--header-h) + 8px);
+    right: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--surface);
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px) scale(.95);
+    transition: var(--transition);
+    min-width: 300px;
+    z-index: 1000;
+    max-height: 80vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+.app-grid.active { opacity: 1; visibility: visible; transform: translateY(0) scale(1); }
+
+.app-grid a {
+    display: flex; flex-direction: column; align-items: center; gap: .5rem; padding: 1rem;
+    text-decoration: none; color: var(--text);
+    background: var(--glass); border: 1px solid var(--border); border-radius: 12px;
+    transition: var(--transition); font-size: 14px; font-weight: 500;
+}
+.app-grid a:hover {
+    background: var(--primary-gradient); color: #fff; transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102,126,234,.3);
+}
+
+.icon-box {
+    font-size: 24px; width: 48px; height: 48px; display: flex; align-items: center;
+    justify-content: center; background: var(--glass); border-radius: 12px; transition: var(--transition);
+}
+
+/* Scrollbar styling */
+.app-grid::-webkit-scrollbar { width: 8px; }
+.app-grid::-webkit-scrollbar-track { background: transparent; }
+.app-grid::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 4px; }
+.app-grid::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.4); }
+
+/* MAIN CONTENT */
+.page {
+    padding-top: 180px;
+    padding-bottom: var(--space-2xl);
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: var(--space-xl);
+    margin: var(--space-xl) 0;
+    box-shadow: var(--shadow);
+}
+
+/* Typography */
+.card h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: var(--space-lg);
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.card h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-md);
+    color: var(--text);
+    border-left: 4px solid var(--accent-blue);
+    padding-left: var(--space-md);
+    text-align: left;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-sm);
+    color: var(--text);
+    text-align: left;
+}
+
+.card p {
+    margin-bottom: var(--space-md);
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.card ul, .card ol {
+    margin-left: var(--space-lg);
+    margin-bottom: var(--space-md);
+    color: var(--text-secondary);
+}
+
+.card li {
+    margin-bottom: var(--space-xs);
+    line-height: 1.7;
+}
+
+.card code {
+    background: var(--glass);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: var(--accent-blue);
+}
+
+.card pre {
+    background: var(--glass);
+    padding: var(--space-md);
+    border-radius: var(--radius);
+    overflow-x: auto;
+    margin-bottom: var(--space-md);
+}
+
+.card pre code {
+    background: none;
+    padding: 0;
+    color: var(--text);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .app-grid {
+        right: 1rem;
+        left: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .wrap-max { padding: 0 var(--space-md); }
+    .card { padding: var(--space-lg); }
+    .card h1 { font-size: 2rem; }
+    .card h2 { font-size: 1.5rem; }
+}
+
+/* ===== ELEGANT LINK STYLES ===== */
+
+/* Card links: Gradient underline */
+.card a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.7), rgba(118, 75, 162, 0.7));
+    background-size: 0% 1.5px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                color 0.3s ease;
+}
+
+.card a:hover {
+    background-size: 100% 1.5px;
+    color: #667eea;
+}
+
+/* Footer links: Specific selectors to override after injection */
+.footer a,
+.footer-micro a,
+#footer-placeholder a {
+    color: var(--text-secondary) !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid transparent !important;
+    background: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.footer a:hover,
+.footer-micro a:hover,
+#footer-placeholder a:hover {
+    color: #667eea !important;
+    border-bottom-color: rgba(102, 126, 234, 0.4) !important;
+}
+
+/* Figcaption links: Ultra subtle */
+figcaption a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    opacity: 0.9;
+    background: none !important;
+}
+
+figcaption a::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.5;
+    transition: width 0.3s ease;
+}
+
+figcaption a:hover {
+    opacity: 1;
+}
+
+figcaption a:hover::after {
+    width: 100%;
+}
+```
+
+`ukhona/css/main.css`
+```css
+/* ===== MAIN.CSS (Variables removed - now in variables.css) ===== */
+
+/* ===== BASE STYLES ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: var(--transition);
+}
+
+/* Background Animation */
+.bg-pattern {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2;
+    background: var(--bg);
+}
+.bg-pattern::before {
+    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at 20% 20%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
+    animation: backgroundFloat 20s ease-in-out infinite;
+}
+@keyframes backgroundFloat {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(20px, 10px); }
+}
+
+/* ===== HEADER & NAV ===== */
+.header {
+    position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+    backdrop-filter: blur(var(--blur)); background: var(--surface);
+    border-bottom: 1px solid var(--border); min-height: var(--header-h);
+}
+.nav-container {
+    max-width: var(--max-wrap); margin: 0 auto; padding: 0 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    height: var(--header-h);
+}
+
+.logo {
+    width: var(--logo-size); height: var(--logo-size);
+    animation: spin var(--logo-spin-duration) linear infinite;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+.top-right { display: flex; align-items: center; gap: 1rem; }
+
+/* Menu Icon Dots */
+.menu-icon {
+    display: grid; grid-template-columns: repeat(3, 6px); gap: 3px;
+    padding: 8px; cursor: pointer; border-radius: 8px; background: var(--glass);
+}
+.menu-icon div { width: 6px; height: 6px; background: var(--text); border-radius: 50%; }
+
+/* ===== APP GRID (FIXED VERSION) ===== */
+.app-grid {
+    position: fixed;
+    top: calc(var(--header-h) + 10px);
+    right: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--surface);
+    backdrop-filter: blur(var(--blur));
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    z-index: 2000;
+    max-height: 80vh;
+    overflow-y: auto;
+    
+    /* Hidden by default */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-15px);
+    transition: var(--transition);
+}
+
+.app-grid.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.app-grid a {
+    display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+    padding: 1rem; text-decoration: none; color: var(--text);
+    background: var(--glass); border: 1px solid var(--border); border-radius: 12px;
+}
+.app-grid a:hover { background: var(--primary-gradient); color: #fff; transform: translateY(-2px); }
+
+/* ===== HERO & CONTENT ===== */
+.hero {
+    min-height: 80vh; display: flex; align-items: center; justify-content: center;
+    text-align: center; padding: 2rem;
+}
+.hero-title {
+    font-size: clamp(3rem, 8vw, 6rem); font-weight: 900;
+    background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero-cta { display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap; }
+
+.cta-button {
+    padding: 1rem 2rem; border-radius: 12px; font-weight: 600; text-decoration: none;
+    transition: var(--transition);
+}
+.cta-primary { background: var(--primary-gradient); color: white; }
+.cta-secondary { background: var(--glass); color: var(--text); border: 1px solid var(--border); }
+
+/* ===== CARDS & METRICS ===== */
+.role-grid, .services-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem; padding: 2rem 0;
+}
+.role-card, .service-card {
+    background: var(--surface); border: 1px solid var(--border);
+    padding: 2rem; border-radius: var(--radius); transition: var(--transition);
+}
+.role-card:hover { transform: translateY(-5px); }
+
+.metric-value {
+    font-size: 2.5rem; font-weight: 900; background: var(--success-gradient);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+
+/* ===== FOOTER ===== */
+.footer { text-align: center; padding: 4rem 2rem; border-top: 1px solid var(--border); margin-top: 4rem; }
+.footer-chorus .chip { background: var(--warning-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 700; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 767px) {
+    .app-grid {
+        right: 1rem; left: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero-title { font-size: 3rem; }
+}
+
+/* Utils */
+.sep { display: none !important; }
+```
+
+`ukhona/css/variables.css`
+```css
+/* ========================================
+   VARIABLES.CSS - Single Source of Truth
+   ======================================== */
+
+:root {
+    /* Layout */
+    --max-wrap: 1120px;
+    --pad-x: 24px;
+    --header-h: 160px;
+    
+    /* Spacing Scale */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+    --space-2xl: 6rem;
+    --s-1: 8px; 
+    --s-2: 12px; 
+    --s-3: 16px; 
+    --s-4: 24px;
+    --s-5: 32px; 
+    --s-6: 48px; 
+    --s-7: 64px; 
+    --s-8: 96px;
+
+    /* Gradients */
+    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --warning-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    --success-gradient: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    --accent-blue: #667eea;
+    --accent-purple: #764ba2;
+
+    /* Effects */
+    --blur: 20px;
+    --radius: 16px;
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Logo */
+    --logo-size: 140px;
+    --logo-spin-duration: 60s;
+
+    /* Light Theme Colors */
+    --light-bg: #fafafa;
+    --light-surface: rgba(255, 255, 255, 0.9);
+    --light-glass: rgba(0, 0, 0, 0.02);
+    --light-border: rgba(0, 0, 0, 0.08);
+    --light-text: #1a1a1a;
+    --light-text-secondary: rgba(0, 0, 0, 0.7);
+
+    /* Dark Theme Colors */
+    --dark-bg: #0a0a0f;
+    --dark-surface: rgba(15, 15, 25, 0.8);
+    --dark-glass: rgba(255, 255, 255, 0.05);
+    --dark-border: rgba(255, 255, 255, 0.1);
+    --dark-text: #ffffff;
+    --dark-text-secondary: rgba(255, 255, 255, 0.7);
+}
+
+/* Theme Switching */
+[data-theme="light"] {
+    --bg: var(--light-bg);
+    --surface: var(--light-surface);
+    --glass: var(--light-glass);
+    --border: var(--light-border);
+    --text: var(--light-text);
+    --text-secondary: var(--light-text-secondary);
+}
+
+[data-theme="dark"] {
+    --bg: var(--dark-bg);
+    --surface: var(--dark-surface);
+    --glass: var(--dark-glass);
+    --border: var(--dark-border);
+    --text: var(--dark-text);
+    --text-secondary: var(--dark-text-secondary);
+}
+```
+
+```js
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true
+  },
+  options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+};
+```
+
+```js
+/**
+ * shared.js - Fixed Version
+ * Handles: Header/Footer Injection, Grid Menu, Theme Toggle, Link Correction
+ */
+
+document.addEventListener('DOMContentLoaded', async () => {
+    'use strict';
+
+    // --- CONFIGURATION ---
+    
+    const getPath = (filename) => {
+        const isSubDir = window.location.pathname.includes('/ukhona/html/');
+        const prefix = isSubDir ? '../html/' : 'ukhona/html/';
+        return `${prefix}${filename}`;
+    };
+
+    const REPO_NAME = '/repos-00';
+    const BASE = window.location.pathname.startsWith(REPO_NAME) ? REPO_NAME : '';
+
+    const fixLinks = (container) => {
+        if (!container || !BASE) return;
+        const links = container.querySelectorAll('a[href^="/"]');
+        links.forEach(a => {
+            const href = a.getAttribute('href');
+            if (!href.startsWith(BASE)) {
+                a.setAttribute('href', `${BASE}${href}`);
+            }
+        });
+    };
+
+    // --- INJECTION ENGINE (WITH ERROR FEEDBACK) ---
+    async function inject(id, filename) {
+        const placeholder = document.getElementById(id);
+        if (!placeholder) {
+            console.error(`[System] Element #${id} not found`);
+            return;
+        }
+
+        try {
+            const response = await fetch(getPath(filename));
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            
+            const data = await response.text();
+            placeholder.innerHTML = data;
+            fixLinks(placeholder);
+            console.log(`[System] ✓ Injected: ${filename}`);
+        } catch (err) {
+            console.error(`[System] ✗ Failed to inject ${filename}:`, err);
+            placeholder.innerHTML = `<div style="color:red;padding:1rem;">Failed to load ${filename}</div>`;
+        }
+    }
+
+    // --- LOAD PARTIALS ---
+    const PARTIALS = [
+        ['header', 'header.html'],
+        ['footer-placeholder', 'footer.html']
+    ];
+
+    await Promise.all(PARTIALS.map(([id, file]) => inject(id, file)));
+
+    // --- INITIALIZE COMPONENTS ---
+    initGridMenu();
+    initThemeToggle();
+    initScrollProgress();
+    initFooterChorus(); 
+
+    // --- GRID MENU (FIXED CLICK HANDLING) ---
+    function initGridMenu() {
+        const menuBtn = document.getElementById('menuIcon');
+        const menuGrid = document.getElementById('gridMenu');
+
+        if (!menuBtn || !menuGrid) return;
+
+        fixLinks(menuGrid);
+
+        let isOpen = false;
+
+        const openMenu = () => {
+            isOpen = true;
+            menuGrid.classList.add('active');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        };
+
+        const closeMenu = () => {
+            isOpen = false;
+            menuGrid.classList.remove('active');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        };
+
+        // Toggle on button click
+        menuBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            isOpen ? closeMenu() : openMenu();
+        });
+
+        // Close on outside click (capture phase to catch early)
+        document.addEventListener('click', (e) => {
+            if (isOpen && !menuGrid.contains(e.target) && !menuBtn.contains(e.target)) {
+                closeMenu();
+            }
+        }, true);
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && isOpen) {
+                closeMenu();
+            }
+        });
+    }
+
+    // --- THEME TOGGLE ---
+    function initThemeToggle() {
+        const themeBtn = document.getElementById('toggle-theme');
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        
+        document.documentElement.setAttribute('data-theme', savedTheme);
+
+        if (themeBtn) {
+            themeBtn.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+            
+            themeBtn.addEventListener('click', () => {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                themeBtn.textContent = newTheme === 'dark' ? '🌙' : '☀️';
+            });
+        }
+    }
+
+    // --- SCROLL PROGRESS (DEBOUNCED) ---
+    function initScrollProgress() {
+        const progress = document.querySelector('.scroll-progress');
+        if (!progress) return;
+
+        let ticking = false;
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                    const scrolled = (winScroll / height) * 100;
+                    progress.style.width = scrolled + "%";
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+    }
+
+    // --- FOOTER CHORUS ---
+    function initFooterChorus() {
+        const box = document.querySelector('.rotating-chorus');
+        if (!box) return;
+        
+        const chips = Array.from(box.querySelectorAll('.chip'));
+        if (chips.length === 0) return;
+
+        let currentIndex = 0;
+        chips.forEach((chip, idx) => chip.style.display = idx === 0 ? 'inline' : 'none');
+
+        if (window.chorusInterval) clearInterval(window.chorusInterval);
+        
+        window.chorusInterval = setInterval(() => {
+            chips[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % chips.length;
+            chips[currentIndex].style.display = 'inline';
+        }, 5000);
+    }
+});
+```
+
 # 18
 # 19
