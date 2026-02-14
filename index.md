@@ -781,558 +781,8 @@ find . -mindepth 1 -maxdepth 1 "${KEEP_EXPR[@]}" -exec rm -rf {} +
 
 # 11. UKB-Relativity
 
-```html
-<!DOCTYPE html>
-<!-- html, head, body[header, main, footer] -->
-<html lang="en" data-theme="dark">
-<!-- head, body[header, main, footer] -->
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ukhona — An Accounting of Survival</title>
-  <meta name="color-scheme" content="dark light" />
-  <meta name="theme-color" content="#0a0a0f" />
-  <meta name="description" content="The Dude's Rug.">
-  <link rel="canonical" href="https://ukb-dt.github.io/repos-00/">
-  <meta name="robots" content="index,follow">
-  <meta name="color-scheme" content="dark light">
-  <meta name="theme-color" content="#0a0a0f">
-
-    <!-- Open Graph / Twitter -->
-  <meta property="og:site_name" content="Repos">
-  <meta property="og:title" content="The Dude's Rug">
-  <meta property="og:description" content="Saddle Point">
-  <meta property="og:type" content="blog">
-  <meta property="og:url" content="https://ukb-dt.github.io/repos-00/">
-  <meta property="og:image" content="../img/ukb-landscape.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Dude's Rug">
-  <meta name="twitter:description" content="Saddle Point">
-  <meta name="twitter:image" content="../img/ukb-landscape.jpg"> 
-
-    <!-- Icons / assets -->
-  <link rel="icon" href="https://abikesa.github.io/favicon/assets/favicon-light.ico" type="image/x-icon">
-  <link rel="icon" href="https://abikesa.github.io/favicon/assets/favicon-light.ico" media="(prefers-color-scheme: light)">
-  <link rel="icon" href="https://abikesa.github.io/favicon/assets/favicon-dark.ico" media="(prefers-color-scheme: dark)">
-  <link rel="preload" href="https://abikesa.github.io/logos/assets/ukubona-light.png" as="image">
-  <link rel="preload" href="https://abikesa.github.io/logos/assets/ukubona-dark.png" as="image">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="../css/head.css" rel="stylesheet" />
-  <script src="../js/mathjax.js"></script>
-  <script id="MathJax-script" defer
-     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
-</head>
-<!-- body[header, main, footer] -->
-<body>
-  <div class="scroll-indicator"><div class="scroll-progress"></div></div>
-  <div class="bg-pattern"></div>
-  <!-- header, main, footer -->
-  <header class="header">
-    <div class="nav-container wrap-max">
-      <img src="https://abikesa.github.io/logos/assets/ukubona-dark.png"
-           alt="Ukubona LLC Logo"
-           id="logo"
-           class="logo" />
-
-      <div class="top-right">
-        <ul class="nav-links">
-          <li><a href="https://ukb-dt.github.io/repos-00/" class="nav-link" data-nav="home">Home</a></li>
-        </ul>
-
-        <button class="menu-icon" id="menuIcon" role="button" aria-label="Open navigation menu" aria-expanded="false">
-          <div></div><div></div><div></div>
-          <div></div><div></div><div></div>
-          <div></div><div></div><div></div>
-        </button>
-
-        <button id="toggle-theme" aria-label="Toggle theme">🌙</button>
-      </div>
-    </div>
-    <div class="app-grid wrap-max" id="gridMenu" aria-hidden="true">
-
-            <a href="#"><div class="icon-box">📊</div>Home</a>
-            <a href="#"><div class="icon-box">🎮</div>Games</a>      
-            <a href="#"><div class="icon-box">🎯</div>Mission</a>
-            <a href="#"><div class="icon-box">📈</div>Models</a>
-            <a href="#"><div class="icon-box">🧑‍🤝‍🧑</div>Team</a>
-            <a href="#"><div class="icon-box">✉️</div>Contact</a>
-            <a href="#"><div class="icon-box">🌊</div>Atheists</a>
-            <a href="#"><div class="icon-box">❤️</div>Knob</a>
-            <a href="#"><div class="icon-box">🔥</div>Gemini</a>
-            <a href="#"><div class="icon-box">🧠</div>Table</a>
-            <a href="#"><div class="icon-box">⚛️</div>Heisenberg</a>
-            <a href="#"><div class="icon-box">🔄</div>Prigogine</a>
-            <a href="#"><div class="icon-box">🧬</div>Vogelstein</a>
-            <a href="#"><div class="icon-box">📖</div>Dostoevsky</a>
-            <a href="#"><div class="icon-box">🗻</div>Nietzsche</a>
-            <a href="#"><div class="icon-box">✨</div>Yebo</a>
-            <a href="#"><div class="icon-box">🔥</div>Ngikhona</a>
-            <a href="#"><div class="icon-box">👁️</div>Saubona</a>
-            <a href="#"><div class="icon-box">🎭</div>Dionysus</a>
-            <a href="#"><div class="icon-box">🏛️</div>Apollo</a>
-            <a href="#"><div class="icon-box">⚡</div>Entropy</a>
-            <a href="#"><div class="icon-box">🌀</div>Chaos</a>
-            <a href="#"><div class="icon-box">🎼</div>Harmony</a>
-            <a href="#"><div class="icon-box">🔮</div>Oracle</a>
-            <a href="#"><div class="icon-box">🌌</div>Cosmos</a>
-            <a href="#"><div class="icon-box">💫</div>Stardust</a>
-            <a href="#"><div class="icon-box">🎨</div>Aesthetics</a>
-            <a href="#"><div class="icon-box">⚖️</div>Ethics</a>
-            <a href="#"><div class="icon-box">🧭</div>Navigate</a>
-            <a href="#"><div class="icon-box">🌳</div>Organic</a>
-            <a href="#"><div class="icon-box">🔬</div>Science</a>
-            <a href="#"><div class="icon-box">🎓</div>Academia</a>
-            <a href="#"><div class="icon-box">📚</div>Library</a>
-            <a href="#"><div class="icon-box">🖋️</div>Poetry</a>
-            <a href="#"><div class="icon-box">🎵</div>Music</a>
-            <a href="#"><div class="icon-box">🌅</div>Dawn</a>
-            <a href="#"><div class="icon-box">🌃</div>Dusk</a>
-            <a href="#"><div class="icon-box">💡</div>Insight</a>
-            <a href="#"><div class="icon-box">🔑</div>Gateway</a>
-            <a href="#"><div class="icon-box">🌺</div>Blossom</a>
-            <a href="#"><div class="icon-box">🦅</div>Freedom</a>
-            <a href="#"><div class="icon-box">🐉</div>Myth</a>
-            <a href="#"><div class="icon-box">🌙</div>Lunar</a>
-            <a href="#"><div class="icon-box">☀️</div>Solar</a>
-            <a href="#"><div class="icon-box">🌍</div>Terra</a>
-            <a href="#"><div class="icon-box">🌬️</div>Breath</a>
-            <a href="#"><div class="icon-box">💧</div>Fluid</a>
-            <a href="#"><div class="icon-box">🔆</div>Radiance</a>
-            <a href="#"><div class="icon-box">🌿</div>Growth</a>
-            <a href="#"><div class="icon-box">🍂</div>Decay</a>
-            <a href="#"><div class="icon-box">❄️</div>Crystal</a>
-            <a href="#"><div class="icon-box">🌋</div>Ignition</a>
-            <a href="#"><div class="icon-box">🏔️</div>Summit</a>
-            <a href="#"><div class="icon-box">🌊</div>Wave</a>
-            <a href="#"><div class="icon-box">🎪</div>Spectacle</a>
-            <a href="#"><div class="icon-box">🗝️</div>Cipher</a>
-            <a href="#"><div class="icon-box">📡</div>Signal</a>
-            <a href="#"><div class="icon-box">🛸</div>Beyond</a>
-            <a href="#"><div class="icon-box">🧩</div>Pattern</a>
-            <a href="#"><div class="icon-box">🎲</div>Chance</a>
-            <a href="#"><div class="icon-box">♟️</div>Strategy</a>
-            <a href="#"><div class="icon-box">🏺</div>Artifact</a>
-            <a href="#"><div class="icon-box">📜</div>Scroll</a>
-            <a href="#"><div class="icon-box">🗿</div>Monument</a>
-            <a href="#"><div class="icon-box">⏳</div>Time</a>
-            <a href="#"><div class="icon-box">🔭</div>Vision</a>
-            <a href="#"><div class="icon-box">🧪</div>Alchemy</a>
-            <a href="#"><div class="icon-box">⚗️</div>Transform</a>
-            <a href="#"><div class="icon-box">🎯</div>Precision</a>
-            <a href="#"><div class="icon-box">🌐</div>Network</a>
-            <a href="#"><div class="icon-box">🔗</div>Link</a>
-            <a href="#"><div class="icon-box">🧵</div>Thread</a>
-            <a href="#"><div class="icon-box">🕸️</div>Web</a>
-            <a href="#"><div class="icon-box">🌟</div>Stellar</a>
-            <a href="#"><div class="icon-box">💎</div>Gem</a>
-            <a href="#"><div class="icon-box">🏹</div>Arrow</a>
-            <a href="#"><div class="icon-box">⚔️</div>Conflict</a>
-            <a href="#"><div class="icon-box">🛡️</div>Defense</a>
-            <a href="#"><div class="icon-box">🕊️</div>Peace</a>
-            <a href="#"><div class="icon-box">🦋</div>Metamorphosis</a>
-            <a href="#"><div class="icon-box">🌸</div>Ephemeral</a>
-            <a href="#"><div class="icon-box">🍃</div>Breath</a>
-            <a href="#"><div class="icon-box">🌾</div>Harvest</a>
-            <a href="#"><div class="icon-box">🏮</div>Lantern</a>
-            <a href="#"><div class="icon-box">🎐</div>Wind</a>
-            <a href="#"><div class="icon-box">🧘</div>Stillness</a>
-            <a href="#"><div class="icon-box">⛩️</div>Threshold</a>
-            <a href="#"><div class="icon-box">🕯️</div>Flame</a>
-            <a href="#"><div class="icon-box">🌈</div>Spectrum</a>
-            <a href="#"><div class="icon-box">🎆</div>Celebration</a>
-            <a href="#"><div class="icon-box">🎇</div>Sparkle</a>
-            <a href="#"><div class="icon-box">🌠</div>Wish</a>
-            <a href="#"><div class="icon-box">🔱</div>Trident</a>
-            <a href="#"><div class="icon-box">♾️</div>Infinite</a>
-            <a href="#"><div class="icon-box">🎎</div>Duality</a>
-            <a href="#"><div class="icon-box">🧿</div>Protection</a>
-            <a href="#"><div class="icon-box">🪶</div>Lightness</a>
-            <a href="#"><div class="icon-box">🏛️</div>Archive</a>
-
-    </div>
-  </header>
-
-  <!-- main[sections], footer -->
-  <main class="page wrap-max">
-
-
-                    <!-- G -->
-        <section class="card">
-            <div class="card-body">
-                <h1 class="card-title">The Raindrop and the Ledger: An Intuitive Generalization of Relativity</h1>
-
-                <article class="concept-section">
-                <h2>1. Moving Beyond the Average</h2>
-                <p>
-                    Classical physics (Newton) operates like a basic statistical model: <strong>Mean ± Standard Deviation</strong>. 
-                    It assumes a flat linear background where variance is just "noise."
-                </p>
-                <div class="equation-block" style="text-align: center; margin: 1em 0;">
-                    $$ y = \beta_0 + \epsilon $$
-                </div>
-                <p>
-                    Einstein realized the "noise" at the extremes wasn't random—it was a feature. To explain the variance, 
-                    he introduced a factor: <strong>Geometry determined by Mass</strong>. If your model fails to predict 
-                    the orbit of Mercury, it is because $ R^2 \approx 0 $ for that specific extreme case. 
-                    Relativity provides the explanatory factor.
-                </p>
-                </article>
-
-                <hr>
-
-                <article class="concept-section">
-                <h2>2. Nature's Ledger: The Cost Function</h2>
-                <p>
-                    The equation $ E=mc^2 $ is not just a formula; it is the <strong>exchange rate</strong> of the universe. 
-                    It acts as the cost function of existence.
-                </p>
-                <div class="equation-block" style="text-align: center; margin: 1em 0;">
-                    $$ E = mc^2 $$
-                </div>
-                <ul>
-                    <li><strong>$ E $ (Energy):</strong> The Cost (Currency).</li>
-                    <li><strong>$ m $ (Mass):</strong> The Payload (The object/raindrop).</li>
-                    <li><strong>$ c^2 $ (Exchange Rate):</strong> The price of admission.</li>
-                </ul>
-                <p>
-                    Your intuition connects mass, responsiveness, and cost:
-                </p>
-                <div class="equation-block" style="text-align: center; margin: 1em 0;">
-                    $$ \frac{m \cdot s}{c} \approx \frac{\text{Payload} \times \text{Responsiveness}}{\text{Cost}} $$
-                </div>
-                <p>
-                    As responsiveness increases (latency approaches 0, meaning $ v \to c $), the Cost must scale asymptotically to infinity.
-                </p>
-                </article>
-
-                <hr>
-
-                <article class="concept-section">
-                <h2>3. Terraforming: Stochastic Gradient Descent</h2>
-                <p>
-                    In this model, gravity is not a force pulling objects; it is objects optimizing their path through a landscape. 
-                    The "raindrop" (mass) <strong>terraforms</strong> the gradients for future raindrops.
-                </p>
-                <ul>
-                    <li>
-                    <strong>Matter tells Space how to curve (The Terraforming):</strong>
-                    <br>
-                    $$ G_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu} $$
-                    </li>
-                    <li>
-                    <strong>Space tells Matter how to move (The Descent):</strong>
-                    <br>
-                    The raindrop performs <em>Gradient Descent</em>. It finds the local minimum in the curved geometry. 
-                    It doesn't "feel" gravity; it simply follows the path of least resistance (Least Action) created by the terraforming.
-                    </li>
-                </ul>
-                </article>
-            </div>
-            </section>
-
-                    <!-- O -->
-          <section class="card">
-            <article class="concept-section">
-            <h2>4. When the Payload Is a Star: Latency Collapse and Local Zero</h2>
-
-            <p>
-                Let $ m $ grow—not to a raindrop, not to a planet—but to the <strong>mass of a star</strong>.
-                Something subtle but decisive happens.
-            </p>
-
-            <p>
-                The system does <em>not</em> break. Instead, latency becomes <strong>locally negligible</strong>.
-            </p>
-
-            <div class="equation-block" style="text-align: center; margin: 1em 0;">
-                $$ m \uparrow \;\;\Longrightarrow\;\; \nabla(\text{Geometry}) \uparrow \;\;\Longrightarrow\;\; \text{Latency} \to 0 \;\;(\text{locally}) $$
-            </div>
-
-            <p>
-                For distances that are <em>humanly comprehensible</em>—Sun to Earth, Earth to Moon—the curvature is so dominant
-                that response appears instantaneous. Not because information exceeds $ c $, but because the gradient is steep
-                enough that descent requires no deliberation.
-            </p>
-
-            <ul>
-                <li>
-                    <strong>Latency → 0 is not global.</strong><br>
-                    It is confined to the basin of curvature defined by the star’s mass.
-                </li>
-                <li>
-                    <strong>$ c $ remains absolute.</strong><br>
-                    What vanishes is not the speed limit, but the need to wait.
-                </li>
-            </ul>
-
-            <p>
-                In optimization terms: the learning rate is unchanged, but the loss landscape is so sharply curved
-                that the update converges in one step.
-            </p>
-
-            <div class="equation-block" style="text-align: center; margin: 1em 0;">
-                $$ \text{Deep Curvature} \;\Rightarrow\; \text{Single-Step Convergence} $$
-            </div>
-
-            <p>
-                This is why planetary motion feels clockwork-precise.
-                Not because gravity is strong, but because the ledger is settled <em>near the source</em>.
-            </p>
-
-            <p>
-                A star does not pull.
-                It finalizes accounts.
-            </p>
-            </article>
-            </section>
-
-            <!-- A -->
-            <section class="card">
-            <div class="card-body">
-                <h2 class="card-title">5. When the Ledger Closes: The Event Horizon as Terminal Curvature</h2>
-
-                <article class="concept-section">
-                <p>
-                    Push $ m $ further still—beyond stars, beyond comprehension—until the gradient becomes so extreme 
-                    that the landscape itself <strong>folds inward</strong>.
-                </p>
-
-                <p>
-                    This is not merely steep curvature. This is <strong>terminal curvature</strong>: 
-                    a point where the cost function becomes undefined for external observers.
-                </p>
-
-                <div class="equation-block" style="text-align: center; margin: 1em 0;">
-                    $$ m \to M_{\text{critical}} \;\;\Longrightarrow\;\; r \to r_s = \frac{2GM}{c^2} $$
-                </div>
-
-                <p>
-                    At the Schwarzschild radius $ r_s $, the geometry ceases to permit outbound trajectories. 
-                    Not because of force, but because <em>all geodesics point inward</em>.
-                </p>
-
-                <hr>
-
-                <h3>The Ledger That Cannot Be Audited</h3>
-
-                <p>
-                    In our economic metaphor, the black hole is an account that accepts deposits but issues no receipts. 
-                    Information crosses the event horizon, paying the energy cost $ E = mc^2 $, but the transaction 
-                    <strong>cannot be reversed or verified</strong> from outside.
-                </p>
-
-                <ul>
-                    <li>
-                    <strong>Inside $ r_s $:</strong> Time and space exchange roles. 
-                    The "future" points toward the singularity with the same inevitability that the past recedes from us.
-                    </li>
-                    <li>
-                    <strong>At $ r_s $:</strong> Latency becomes <em>formally infinite</em> for external observers. 
-                    A photon emitted at the horizon takes infinite coordinate time to escape—which is to say, it doesn't.
-                    </li>
-                    <li>
-                    <strong>Beyond $ r_s $:</strong> The gradient is steep but traversable. 
-                    You can still climb out—barely—if you pay the energy cost.
-                    </li>
-                </ul>
-
-                <div class="equation-block" style="text-align: center; margin: 1em 0;">
-                    $$ \text{Curvature at } r_s: \quad \lim_{r \to r_s^+} \left(1 - \frac{r_s}{r}\right)^{-1} = \infty $$
-                </div>
-
-                <p>
-                    This is the point where the cost function diverges. No amount of energy suffices to escape. 
-                    The exchange rate becomes undefined.
-                </p>
-
-                <hr>
-
-                <h3>Optimization Collapse: No Gradient to Descend</h3>
-
-                <p>
-                    In the language of gradient descent, a black hole represents a region where the loss landscape 
-                    has <strong>collapsed into a well with vertical walls</strong>.
-                </p>
-
-                <ul>
-                    <li>
-                    For a star, the gradient is steep but finite. Descent is rapid but possible in reverse (with sufficient energy).
-                    </li>
-                    <li>
-                    For a black hole, the gradient at $ r_s $ is <em>discontinuous</em>. 
-                    Inside, there is no gradient pointing outward. The only direction is down.
-                    </li>
-                </ul>
-
-                <div class="equation-block" style="text-align: center; margin: 1em 0;">
-                    $$ \nabla_{\text{outward}} = 0 \quad \text{for } r < r_s $$
-                </div>
-
-                <p>
-                    You cannot optimize your way out. The terraforming is complete and irreversible.
-                </p>
-
-                <hr>
-
-                <h3>The Singularity: Where the Ledger Itself Breaks</h3>
-
-                <p>
-                    At $ r = 0 $, curvature becomes infinite—not just steep, but <strong>singular</strong>. 
-                    The equations fail. Geometry loses meaning. The cost function has no domain.
-                </p>
-
-                <p>
-                    This is not a feature. It is a <strong>boundary condition</strong> signaling that our current framework—General Relativity—
-                    requires completion. Likely by quantum gravity, where the ledger is kept at Planck scale and the concept of 
-                    "position" itself becomes probabilistic.
-                </p>
-
-                <div class="equation-block" style="text-align: center; margin: 1em 0;">
-                    $$ r \to 0 \quad \Longrightarrow \quad R_{\mu\nu\rho\sigma} \to \infty \quad \text{(breakdown)} $$
-                </div>
-
-                <p>
-                    The singularity is where the raindrop metaphor ends. 
-                    Not because the raindrop vanishes, but because the landscape itself ceases to exist as a continuum.
-                </p>
-
-                <hr>
-
-                <h3>What the Black Hole Teaches Us</h3>
-
-                <p>
-                    A black hole is not an object. It is a <strong>threshold in the cost function of spacetime</strong>.
-                </p>
-
-                <ul>
-                    <li>It is the point where latency becomes absolute.</li>
-                    <li>It is the region where all paths converge to a single inevitable endpoint.</li>
-                    <li>It is the limit case of terraforming: geometry so extreme it permits no return.</li>
-                </ul>
-
-                <p>
-                    In optimization terms: it is a loss well so deep that gradient descent cannot climb out, 
-                    no matter the learning rate, no matter the batch size, no matter the architecture.
-                </p>
-
-                <p>
-                    The black hole does not pull.
-                    <br>
-                    It <strong>finalizes</strong>.
-                </p>
-                </article>
-            </div>
-            </section>
-                            
-
-                <!-- X -->
-                <section class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">6. Evaporation: The Ledger That Leaks</h2>
-
-                        <article class="concept-section">
-                            <p>
-                                Even the most extreme terraformer—the black hole—does not last forever. Quantum mechanics introduces a slow but relentless refund process: <strong>Hawking radiation</strong>.
-                            </p>
-
-                            <p>
-                                Near the event horizon, the vacuum is not empty; it flickers with virtual particle-antiparticle pairs (quantum fluctuations borrowing energy briefly from the ledger). In flat space, they annihilate harmlessly. But the steep curvature splits them: one falls in (negative energy relative to outside), the other escapes as real radiation.
-                            </p>
-
-                            <div style="text-align: center; margin: 1em 0;">
-                                <img src="https://blogs-images.forbes.com/startswithabang/files/2017/08/1-JfanY_MplBJ_FX1N0I2StQ-1200x675.jpg" alt="Hawking radiation virtual particle pairs near black hole horizon" style="max-width: 80%; height: auto;">
-                            </div>
-
-                            <p>
-                                The escaping particle carries positive energy away, paid for by the black hole's mass. The ledger slowly refunds itself—mass decreases, temperature rises (since <em>T ∝ 1/M</em>), and the process accelerates.
-                            </p>
-
-                            <div class="equation-block" style="text-align: center; margin: 1em 0;">
-                                $$ T_H = \frac{\hbar c^3}{8\pi G M k_B} \quad \Rightarrow \quad \text{Smaller } M \rightarrow \text{Hotter, Faster Leak} $$
-                            </div>
-
-                            <p>
-                                For stellar-mass black holes, this takes ~10<sup>67</sup> years—far longer than the universe's age. But eventually, the payload shrinks, the horizon contracts, and the final stages become explosive.
-                            </p>
-
-                            <hr>
-
-                            <h3>The Paradox: Where Did the Information Go?</h3>
-
-                            <p>
-                                Here the ledger metaphor faces its deepest audit: Hawking radiation appears thermal—random, depending only on M, Q, J (no-hair theorem). It carries no trace of what fell in. As the black hole evaporates completely, the original information (quantum states of infalling matter) seems erased.
-                            </p>
-
-                            <ul>
-                                <li><strong>Classical GR + Semi-Classical QFT:</strong> Pure input state → mixed thermal output → information loss.</li>
-                                <li><strong>Quantum Mechanics Demands:</strong> Unitarity. Information must be preserved; the evolution is reversible. No true destruction allowed.</li>
-                            </ul>
-
-                            <p>
-                                This is the <strong>black hole information paradox</strong>: the ultimate cost function appears to violate conservation. The ledger accepts irreversible deposits but issues only generic thermal receipts—no audit trail.
-                            </p>
-
-                            <div class="equation-block" style="text-align: center; margin: 1em 0;">
-                                $$ \text{Initial Pure State} \to \text{Thermal Radiation} + \text{Nothing} \quad ? \quad \Rightarrow \quad \Delta S > 0 \text{ (entropy increase without recovery)} $$
-                            </div>
-
-                            <hr>
-
-                            <h3>Modern Resolution: The Ledger is Encrypted, Not Erased</h3>
-
-                            <p>
-                                Recent advances (AdS/CFT holography, replica wormholes, Page curve) suggest the information is not lost but <strong>encoded subtly in correlations</strong> across the radiation. Early radiation looks random, but late-stage particles are highly entangled with the interior—revealing the original data as the hole shrinks past "Page time."
-                            </p>
-
-                            <ul>
-                                <li><strong>Page Curve:</strong> Entanglement entropy rises, peaks, then falls to zero—information emerges unitarily in the full radiation bath.</li>
-                                <li><strong>Islands & Wormholes:</strong> Hidden "islands" inside the horizon contribute to the entropy calculation; non-local connections (wormholes in path integrals) allow information to tunnel out without violating causality.</li>
-                                <li><strong>Holography:</strong> The interior is a projection from the horizon ledger—all information lives on the boundary, recoverable from the radiation like a holographic refund.</li>
-                            </ul>
-
-                            <div style="text-align: center; margin: 1em 0;">
-                                <img src="https://futurism.com/wp-content/uploads/2015/04/Information-Paradox-Infographic.jpg" alt="Black hole information paradox illustration showing disappearance vs firewall scenarios" style="max-width: 80%; height: auto;">
-                            </div>
-
-                            <p>
-                                The ledger does not delete; it encrypts with quantum correlations. Evaporation is not destruction but a slow decryption broadcast.
-                            </p>
-
-                            <p>
-                                The black hole does not finalize forever.
-                                <br>
-                                It <strong>broadcasts</strong>—and the information, though delayed, returns.
-                            </p>
-                        </article>
-                    </div>
-                </section>
-
-  </main>
-  <!-- footer -->
-  <footer class="footer">
-    <div class="wrap-max footer-wrap">
-      <div class="footer-chorus" aria-label="Ukubona chorus">
-        <span class="chip">"Ukubona" means to see</span>
-        <span class="chip"><em>"Ivyabona" means to witness</em> —</span>
-        <span class="chip">to look into the mirror.</span>
-      </div>
-      <div class="footer-extra" hidden></div>
-      <div class="footer-footnote" aria-live="polite"></div>
-      <div class="footer-micro" style="margin-top:12px">
-        <p>© 2025 Ukubona LLC · <a href="https://ukubona-llc.github.io/assets/files/ukubona.vcf" download>vCard</a> · Johns Hopkins Enterprise Vendor (June 2025)</p>
-      </div>
-    </div>
-  </footer>
-  <script src="../js/main.js"></script>
-</body>
-</html>
-
+```txt
+Deleted it / Review Decision
 ```
 
 # 12. Static / Website (Scaffold)
@@ -1343,34 +793,41 @@ See `ukhona/static.sh`
 
 See `ukhona/dynamic.sh`
 
-# 13. Onboarding Windows (Drama)
+# 14. Onboarding Windows (Drama)
 
 ```sh
 eval "$(pyenv virtualenv-init -)"
 root@gabes:~# pyenv install 3.11.12
-`pyenv activate' requires Pyenv and Pyenv-Virtualenv to be loaded into your shell.
+```
+
 Check your shell configuration and Pyenv and Pyenv-Virtualenv installation instructions.
 
+```sh
 root@gabes:~# python3 -m venv .venv
+```
+
 The virtual environment was not created successfully because ensurepip is not
 available.  On Debian/Ubuntu systems, you need to install the python3-venv
 package using the following command.
 
-    apt install python3.10-venv
-
+```sh
+   apt install python3.10-venv
+```
 You may need to use sudo with that command.  After installing the python3-venv
 package, recreate your virtual environment.
 
+
 Failing command: /root/.venv/bin/python3
+
+```sh
 root@gabes:~#    apt install python3.10-venv
 root@gabes:~# pyenv install 3.11.12
 (myenv) root@gabes:~# pip install pandas matplotlib seaborn plotly jupyter
 To update, run: python -m pip install --upgrade pip
 (myenv) root@gabes:~#
-
 ```
 
-# 14. `cryo-pyro/repo` 
+# 15. `cryo-pyro/repo` 
 
 ```sh
 python3 analyze_repo.py --root . --max-depth 10 --ignore .cache
@@ -1690,14 +1147,14 @@ if __name__ == "__main__":
     main()
 ```
 
-# 15 `ukb-dt/repo-00 -> cryo-pyro/repo-00`
+# 16 `ukb-dt/repo-00 -> cryo-pyro/repo-00`
 
 - footer
 - header
 - etc
 
-# 16 `eplnm/tin`
-# 17 `ukb-dt or cryo-pyro/repos-00`
+# 17 `eplnm/tin`
+# 18 `ukb-dt or cryo-pyro/repos-00`
 
 `index.html`
 ```html
@@ -1769,7 +1226,8 @@ if __name__ == "__main__":
 </html>
 ```
 
-`ukhona/html/template.html`
+# 19. `ukhona/html/template.html`
+
 ```html
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
@@ -1857,7 +1315,7 @@ if __name__ == "__main__":
 </html>
 ```
 
-`ukhona/html/footer.html`
+# 20. `ukhona/html/footer.html`
 
 ```html
 <footer class="footer">
@@ -1877,14 +1335,19 @@ if __name__ == "__main__":
 </footer>
 ```
 
-`ukhona/html/header.html`
+# 21. `ukhona/html/header.html`
 
 ```html
 <div class="nav-container wrap-max">
-  <img src="https://abikesa.github.io/logos/assets/ukubona-dark.png" alt="Ukubona LLC Logo" id="logo" class="logo" />
+  <img src="https://abikesa.github.io/logos/assets/ukubona-dark.png" 
+       alt="Ukubona LLC Logo" 
+       id="logo" 
+       class="logo" 
+       data-light-src="https://abikesa.github.io/logos/assets/ukubona-light.png"
+       data-dark-src="https://abikesa.github.io/logos/assets/ukubona-dark.png" />
   <div class="top-right">
     <ul class="nav-links">
-      <li><a href="/"                         class="nav-link" data-nav="home">Home</a></li>
+      <li><a href="/" class="nav-link" data-nav="home">Home</a></li>
     </ul>
     <button class="menu-icon" id="menuIcon" role="button" aria-label="Open navigation menu">
       <div></div><div></div><div></div>
@@ -1898,11 +1361,10 @@ if __name__ == "__main__":
 <div class="app-grid wrap-max" id="gridMenu" aria-hidden="true">
   <a href="/"><div class="icon-box">📊</div>Home</a>
   <a href="/ukhona/html/template.html"><div class="icon-box">🎮</div>Template</a>
-  <!---a href="/assets/html/ukb-p-001.html"><div class="icon-box">🧭</div>Onboarding</a>-->
 </div>
 ```
 
-`ukhona/css/card.css`
+# 22. `ukhona/css/card.css`
 ```css
 /* ========== CARD-SPECIFIC STYLES ========== */
 
@@ -2089,7 +1551,7 @@ a.cta:hover {
 }
 ```
 
-`ukhona/css/footer.css`
+# 23. `ukhona/css/footer.css`
 ```css
 /* ========================================
    FOOTER.CSS - Centered Footer Styles
@@ -2171,7 +1633,7 @@ a.cta:hover {
 }
 ```
 
-`ukhona/css/head.css`
+# 24. `ukhona/css/head.css`
 ```css
 /* ===== HEAD.CSS (Variables removed - now in variables.css) ===== */
 
@@ -2478,7 +1940,7 @@ figcaption a:hover::after {
 }
 ```
 
-`ukhona/css/main.css`
+# 25. `ukhona/css/main.css`
 ```css
 /* ===== MAIN.CSS (Variables removed - now in variables.css) ===== */
 
@@ -2629,7 +2091,7 @@ body {
 .sep { display: none !important; }
 ```
 
-`ukhona/css/variables.css`
+# 26. `ukhona/css/variables.css`
 ```css
 /* ========================================
    VARIABLES.CSS - Single Source of Truth
@@ -2725,6 +2187,8 @@ window.MathJax = {
   }
 };
 ```
+
+# 27. `ukhona/css/shared.js`
 
 ```js
 /**
@@ -2841,9 +2305,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     // --- THEME TOGGLE ---
     function initThemeToggle() {
         const themeBtn = document.getElementById('toggle-theme');
+        const logo = document.getElementById('logo');
         const savedTheme = localStorage.getItem('theme') || 'dark';
         
         document.documentElement.setAttribute('data-theme', savedTheme);
+
+        // Update logo for initial theme
+        if (logo) {
+            const lightSrc = logo.getAttribute('data-light-src');
+            const darkSrc = logo.getAttribute('data-dark-src');
+            logo.src = savedTheme === 'dark' ? darkSrc : lightSrc;
+        }
 
         if (themeBtn) {
             themeBtn.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
@@ -2855,6 +2327,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                 document.documentElement.setAttribute('data-theme', newTheme);
                 localStorage.setItem('theme', newTheme);
                 themeBtn.textContent = newTheme === 'dark' ? '🌙' : '☀️';
+                
+                // Switch logo
+                if (logo) {
+                    const lightSrc = logo.getAttribute('data-light-src');
+                    const darkSrc = logo.getAttribute('data-dark-src');
+                    logo.src = newTheme === 'dark' ? darkSrc : lightSrc;
+                }
             });
         }
     }
@@ -2902,5 +2381,5 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 ```
 
-# 18
-# 19
+# 28
+# 29
