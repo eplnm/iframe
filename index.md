@@ -1,3 +1,67 @@
+
+Now I see it clearly. You have **two completely different layout approaches** in `cryopyro/website.html` — the broken file — and you're showing me `geodesic.html` which works.
+
+**The difference that matters:**
+
+`geodesic.html` (working) uses:
+```html
+<div class="page-wrap">      ← centres everything, max-width 1100px
+  <div class="layout">       ← grid: 200px sidebar + 1fr content
+    <nav class="toc">...</nav>
+    <main>...</main>
+  </div>
+</div>
+```
+And `.toc` is `position: sticky` (not `fixed`).
+
+`website.html` (broken) uses `position: fixed` on `.toc` + a `.content-wrapper` trying to flex-center, with a **conflicting old `main { margin-left: 220px }`** still in there.
+
+---
+
+**The fix for `website.html` — replace your layout CSS and HTML structure with the geodesic pattern:**
+
+**CSS:**
+```css
+.page-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 240px; /* adjust to your header height */
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+}
+
+.toc {
+  position: sticky;
+  top: 220px; /* match header height */
+  height: calc(100vh - 220px);
+  overflow-y: auto;
+  border-right: 1px solid var(--border);
+}
+
+main {
+  min-width: 0;
+  padding: 2rem 3rem;
+}
+```
+
+**HTML structure:**
+```html
+<header class="header" id="header"></header>
+
+<div class="page-wrap">
+  <div class="layout">
+    <nav class="toc">...</nav>
+    <main>...</main>
+  </div>
+</div>
+```
+
+Delete `.content-wrapper`, `.sidebar` class, and the old `main { margin-left: 220px }`. The geodesic pattern just works — copy it exactly.
+
 ## 01. Snapshot
 
 ```sh
@@ -2382,4 +2446,5 @@ document.addEventListener('DOMContentLoaded', async () => {
 ```
 
 # 28
+
 # 29
