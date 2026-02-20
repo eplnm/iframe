@@ -497,6 +497,49 @@ echo "👉 $OUTPUT_FILE"
 </figure>
 ```
 
+```html
+<div style="display: flex; gap: 16px; max-width: 75%;">
+
+  <!-- Video 1 -->
+  <div style="flex: 1; position: relative; padding-bottom: 56.25%; height: 0;">
+    <iframe
+      src="https://www.youtube.com/embed/qnxiB39lJlo"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    </iframe>
+  </div>
+
+  <!-- Video 2 -->
+  <div style="flex: 1; position: relative; padding-bottom: 56.25%; height: 0;">
+    <iframe
+      src="https://www.youtube.com/embed/9zXiu-oGFus"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    </iframe>
+  </div>
+
+  <!-- Video 3 — Bernstein, Harvard Lecture 1 -->
+  <div style="flex: 1; position: relative; padding-bottom: 56.25%; height: 0;">
+    <iframe
+      src="https://www.youtube.com/embed/rfyopbLIatM"
+      title="Bernstein – Harvard Lecture 1"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    </iframe>
+  </div>
+
+</div>
+
+```
+
 ## 05. PDF
 
 ```html
