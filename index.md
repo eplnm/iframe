@@ -1,3 +1,55 @@
+Found it. Two problems, both in the `<style>` block of this page:
+
+**Problem 1 — CSS variable conflict.** You define `--bg`, `--surface` etc. twice. The second definitions reference `--dark-bg`, `--dark-surface` etc. which come from `variables.css`, but they're declared inside `:root` *before* that stylesheet's variables are guaranteed to cascade correctly. More critically:
+
+```css
+:root {
+  --bg: #080c10;       /* set here... */
+  --bg: var(--dark-bg); /* ...then immediately overwritten with a variable that may not exist */
+}
+```
+
+If `--dark-bg` isn't resolved, `--bg` becomes `initial`, breaking the whole theme system.
+
+**Problem 2 — The theme toggle has nothing to respond to.** Your `shared.js` sets `data-theme` on `<html>` and expects CSS like:
+
+```css
+[data-theme="light"] { --bg: #ffffff; ... }
+```
+
+But this page has **no such rules**. The `:root` block hardcodes dark values with no light overrides, so even when `shared.js` correctly toggles `data-theme="light"`, nothing changes visually.
+
+**The fix** — replace your duplicate `:root` variable block with proper theme-aware rules:
+
+```css
+:root {
+  --bg:      #080c10;
+  --surface: #0e1419;
+  --surface2:#141b23;
+  --border:  #1e2a36;
+  --text:    #d8e6f3;
+  --muted:   #6a8099;
+  --accent:  #00c9a7;
+  --accent2: #f0a500;
+  --red:     #ff6b6b;
+  --blue:    #4e9af1;
+  --purple:  #c792ea;
+  --mono:    'IBM Plex Mono', monospace;
+  --serif:   'DM Serif Display', serif;
+  --sans:    'Libre Franklin', sans-serif;
+}
+
+[data-theme="light"] {
+  --bg:      #f5f7fa;
+  --surface: #ffffff;
+  --surface2:#eef1f5;
+  --border:  #d0d8e4;
+  --text:    #1a2533;
+  --muted:   #5a7090;
+}
+```
+
+That's it. The toggle was working mechanically — `shared.js` is fine — but this page was painted in permanent dark ink with no light-mode layer underneath (only use the data-theme moiety).
 
 `ukhona/template-06.html`
 
